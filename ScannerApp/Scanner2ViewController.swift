@@ -15,6 +15,7 @@ class Scanner2ViewController: UIViewController, ImageScannerControllerDelegate {
     
     let imageView = UIImageView()
     var image = UIImage()
+    let shareButton = UIButton(type: .system)
     var url = URL(fileURLWithPath: "/Path/To/PDF")
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +28,6 @@ class Scanner2ViewController: UIViewController, ImageScannerControllerDelegate {
     
     
     func setupView(){
-        let shareButton = UIButton(type: .system)
         self.view.addSubview(imageView)
         self.view.addSubview(shareButton)
         imageView.contentMode = .scaleAspectFill
@@ -41,7 +41,7 @@ class Scanner2ViewController: UIViewController, ImageScannerControllerDelegate {
         shareButton.center(in: view, offset: CGPoint(x: 0, y: 50))
         shareButton.height(50)
         shareButton.width(100)
-        
+        shareButton.isHidden = true
     }
     @objc func shareButtonTapped(){
         sharePdf(path: url)
@@ -62,7 +62,7 @@ class Scanner2ViewController: UIViewController, ImageScannerControllerDelegate {
             image = results.scannedImage
             imageView.image = results.scannedImage
         }
-        
+        shareButton.isHidden = false
         let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
         let docURL = documentDirectory.appendingPathComponent("myFile.pdf")
         url = docURL
