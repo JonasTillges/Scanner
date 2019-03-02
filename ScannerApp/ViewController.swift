@@ -24,7 +24,6 @@ class ViewController: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         
         setupViews()
-        
     }
     
     
@@ -33,9 +32,7 @@ class ViewController: UIViewController {
         let button = UIButton(type: .system)
         self.view.addSubview(scanButton)
         self.view.addSubview(button)
-        
-
-       
+    
         button.setTitle("Scan", for: .normal)
         button.tintColor = .white
         button.backgroundColor = UIColor(red: 11/255, green: 22/255, blue: 53/255, alpha: 1)
@@ -44,7 +41,7 @@ class ViewController: UIViewController {
         button.center(in: view, offset: CGPoint(x: 0, y: 50))
         button.height(50)
         button.width(100)
-        
+        button.isHidden = true
         scanButton.setTitle("Scan", for: .normal)
         scanButton.tintColor = .white
         scanButton.backgroundColor = UIColor(red: 11/255, green: 22/255, blue: 53/255, alpha: 1)
@@ -70,7 +67,6 @@ class ViewController: UIViewController {
         scanner.navigationItem.title = "Scanner"
         navigationController?.pushViewController(scanner, animated: false)
     }
-    
     
 }
 
