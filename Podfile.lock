@@ -1,0 +1,24 @@
+PODS:
+  - TinyConstraints (3.3.1)
+  - WeScan (1.0.0)
+  - YesWeScan (1.2.0)
+
+DEPENDENCIES:
+  - TinyConstraints
+  - WeScan (>= 0.9)
+  - YesWeScan
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - TinyConstraints
+    - WeScan
+    - YesWeScan
+
+SPEC CHECKSUMS:
+  TinyConstraints: dbf7519aefc01ea59d62244300c7718aec68e280
+  WeScan: a049a4a2a0eb1c4560cf649ebd933d07b0d9ef4c
+  YesWeScan: fe22bfa750864b2669956a8e3d480e25de98e235
+
+PODFILE CHECKSUM: f2d09e06b3e508213ecc59acb9923c5c01603aa4
+
+COCOAPODS: 1.5.2
