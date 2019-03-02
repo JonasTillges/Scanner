@@ -18,53 +18,56 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(red: 44/255, green: 57/255, blue: 95/255, alpha: 1)
-        navigationItem.title = "programmaticallyUI"
+        navigationItem.title = "Scanner App"
         navigationController?.navigationBar.barTintColor = UIColor(red: 217/255, green: 48/255, blue: 80/255, alpha: 1)
+        navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        navigationController?.navigationBar.prefersLargeTitles = true
         
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white,
-                                                                   NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 20)]
         setupViews()
         
     }
     
     
     func setupViews() {
-        let buttonX = 150
-        let buttonY = 150
-        let buttonWidth = 100
-        let buttonHeight = 50
+        let scanButton = UIButton(type: .system)
         let button = UIButton(type: .system)
-        button.setTitle("Scan", for: .normal)
-        button.tintColor = .white
-        button.backgroundColor = .red
-        button.addTarget(self, action: #selector(buttonClicked), for: .touchUpInside)
-        button.frame = CGRect(x: buttonX, y: buttonY, width: buttonWidth, height: buttonHeight)
+        self.view.addSubview(scanButton)
         self.view.addSubview(button)
         
-        let scanbuttonX = 150
-        let scanbuttonY = 500
-        let scanbuttonWidth = 100
-        let scanbuttonHeight = 50
-        let scanButton = UIButton(type: .system)
+
+       
+        button.setTitle("Scan", for: .normal)
+        button.tintColor = .white
+        button.backgroundColor = UIColor(red: 11/255, green: 22/255, blue: 53/255, alpha: 1)
+        button.layer.cornerRadius = 10
+        button.addTarget(self, action: #selector(buttonClicked), for: .touchUpInside)
+        button.center(in: view, offset: CGPoint(x: 0, y: 50))
+        button.height(50)
+        button.width(100)
+        
         scanButton.setTitle("Scan", for: .normal)
         scanButton.tintColor = .white
-        scanButton.backgroundColor = .red
+        scanButton.backgroundColor = UIColor(red: 11/255, green: 22/255, blue: 53/255, alpha: 1)
+        scanButton.layer.cornerRadius = 10
         scanButton.addTarget(self, action: #selector(scanbuttonClicked), for: .touchUpInside)
-        scanButton.frame = CGRect(x: scanbuttonX, y: scanbuttonY, width: scanbuttonWidth, height: scanbuttonHeight)
-        self.view.addSubview(scanButton)
+        scanButton.center(in: view, offset: CGPoint(x: 0, y: -50))
+        scanButton.height(50)
+        scanButton.width(100)
         
     }
     
     @objc func buttonClicked() {
         
         let scanner = ScannerViewController()
-        
+        scanner.navigationItem.title = "Yes We Scan"
         scanner.delegate = self
+        
         navigationController?.pushViewController(scanner, animated: true)
     }
     
     @objc func scanbuttonClicked (){
         let scanner = Scanner2ViewController()
+        scanner.navigationItem.title = "WeScan"
         navigationController?.pushViewController(scanner, animated: true)
     }
     

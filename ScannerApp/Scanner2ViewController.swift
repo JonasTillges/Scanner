@@ -33,6 +33,7 @@ class Scanner2ViewController: UIViewController, ImageScannerControllerDelegate {
     func imageScannerControllerDidCancel(_ scanner: ImageScannerController) {
         // The user tapped 'Cancel' on the scanner
         // You are responsible for dismissing the ImageScannerController
+        navigationController?.popViewController(animated: true)
         scanner.dismiss(animated: true)
     }
     
