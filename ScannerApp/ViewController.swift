@@ -59,7 +59,7 @@ class ViewController: UIViewController {
     @objc func buttonClicked() {
         
         let scanner = ScannerViewController()
-        scanner.navigationItem.title = "Yes We Scan"
+        scanner.navigationItem.title = "Scanner"
         scanner.delegate = self
         
         navigationController?.pushViewController(scanner, animated: true)
@@ -67,8 +67,8 @@ class ViewController: UIViewController {
     
     @objc func scanbuttonClicked (){
         let scanner = Scanner2ViewController()
-        scanner.navigationItem.title = "WeScan"
-        navigationController?.pushViewController(scanner, animated: true)
+        scanner.navigationItem.title = "Scanner"
+        navigationController?.pushViewController(scanner, animated: false)
     }
     
     
