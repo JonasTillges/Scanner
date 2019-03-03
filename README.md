@@ -1,5 +1,5 @@
 # Scanner
-
+A simple Scanner app with PDF export in order to play around with different libraries.
 
 <a href="https://ibb.co/brM50Cw"><img src="https://i.ibb.co/cNShBZf/IMG-2299.jpg" alt="IMG-2299" border="0"></a>
 <a href="https://ibb.co/VCXNGxQ"><img src="https://i.ibb.co/dpncvtL/IMG-2300.png" alt="IMG-2300" border="0"></a>
