@@ -12,6 +12,8 @@
 		DD271033222AAB9E00F240F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD271032222AAB9E00F240F7 /* ViewController.swift */; };
 		DD271038222AAB9F00F240F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD271037222AAB9F00F240F7 /* Assets.xcassets */; };
 		DD27103B222AAB9F00F240F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD271039222AAB9F00F240F7 /* LaunchScreen.storyboard */; };
+		DD40926D222C12E500F4F8D5 /* popUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD40926C222C12E500F4F8D5 /* popUpViewController.swift */; };
+		DD40926F222C140100F4F8D5 /* PopUpPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD40926E222C140100F4F8D5 /* PopUpPresentationController.swift */; };
 		DD43B6AF222AB55100CF6682 /* Scanner2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD43B6AE222AB55100CF6682 /* Scanner2ViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		DD271037222AAB9F00F240F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD27103A222AAB9F00F240F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD27103C222AAB9F00F240F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD40926C222C12E500F4F8D5 /* popUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = popUpViewController.swift; sourceTree = "<group>"; };
+		DD40926E222C140100F4F8D5 /* PopUpPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpPresentationController.swift; sourceTree = "<group>"; };
 		DD43B6AE222AB55100CF6682 /* Scanner2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scanner2ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +88,8 @@
 				DD271039222AAB9F00F240F7 /* LaunchScreen.storyboard */,
 				DD27103C222AAB9F00F240F7 /* Info.plist */,
 				DD43B6AE222AB55100CF6682 /* Scanner2ViewController.swift */,
+				DD40926C222C12E500F4F8D5 /* popUpViewController.swift */,
+				DD40926E222C140100F4F8D5 /* PopUpPresentationController.swift */,
 			);
 			path = ScannerApp;
 			sourceTree = "<group>";
@@ -206,6 +212,8 @@
 				DD271033222AAB9E00F240F7 /* ViewController.swift in Sources */,
 				DD43B6AF222AB55100CF6682 /* Scanner2ViewController.swift in Sources */,
 				DD271031222AAB9E00F240F7 /* AppDelegate.swift in Sources */,
+				DD40926D222C12E500F4F8D5 /* popUpViewController.swift in Sources */,
+				DD40926F222C140100F4F8D5 /* PopUpPresentationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
