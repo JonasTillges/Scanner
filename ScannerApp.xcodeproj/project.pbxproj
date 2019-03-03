@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		3F5C569ADAA7C12C20552023 /* Pods_ScannerApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 252F15B9C2B6B3E4928B3991 /* Pods_ScannerApp.framework */; };
+		DD0AE680222C7B8A00310D01 /* Modal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0AE67F222C7B8A00310D01 /* Modal.swift */; };
 		DD271031222AAB9E00F240F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD271030222AAB9E00F240F7 /* AppDelegate.swift */; };
 		DD271033222AAB9E00F240F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD271032222AAB9E00F240F7 /* ViewController.swift */; };
 		DD271038222AAB9F00F240F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD271037222AAB9F00F240F7 /* Assets.xcassets */; };
 		DD27103B222AAB9F00F240F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD271039222AAB9F00F240F7 /* LaunchScreen.storyboard */; };
-		DD40926D222C12E500F4F8D5 /* popUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD40926C222C12E500F4F8D5 /* popUpViewController.swift */; };
+		DD40926D222C12E500F4F8D5 /* popUpAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD40926C222C12E500F4F8D5 /* popUpAlert.swift */; };
 		DD43B6AF222AB55100CF6682 /* Scanner2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD43B6AE222AB55100CF6682 /* Scanner2ViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -20,13 +21,14 @@
 		252F15B9C2B6B3E4928B3991 /* Pods_ScannerApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScannerApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26F09D3408B80791C72E09D8 /* Pods-ScannerApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScannerApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScannerApp/Pods-ScannerApp.debug.xcconfig"; sourceTree = "<group>"; };
 		9455EDFB3805D531DF79EDFC /* Pods-ScannerApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScannerApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScannerApp/Pods-ScannerApp.release.xcconfig"; sourceTree = "<group>"; };
+		DD0AE67F222C7B8A00310D01 /* Modal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modal.swift; sourceTree = "<group>"; };
 		DD27102D222AAB9E00F240F7 /* ScannerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScannerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD271030222AAB9E00F240F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD271032222AAB9E00F240F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DD271037222AAB9F00F240F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD27103A222AAB9F00F240F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD27103C222AAB9F00F240F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DD40926C222C12E500F4F8D5 /* popUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = popUpViewController.swift; sourceTree = "<group>"; };
+		DD40926C222C12E500F4F8D5 /* popUpAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = popUpAlert.swift; sourceTree = "<group>"; };
 		DD43B6AE222AB55100CF6682 /* Scanner2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scanner2ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,7 +88,8 @@
 				DD271039222AAB9F00F240F7 /* LaunchScreen.storyboard */,
 				DD27103C222AAB9F00F240F7 /* Info.plist */,
 				DD43B6AE222AB55100CF6682 /* Scanner2ViewController.swift */,
-				DD40926C222C12E500F4F8D5 /* popUpViewController.swift */,
+				DD40926C222C12E500F4F8D5 /* popUpAlert.swift */,
+				DD0AE67F222C7B8A00310D01 /* Modal.swift */,
 			);
 			path = ScannerApp;
 			sourceTree = "<group>";
@@ -207,9 +210,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD271033222AAB9E00F240F7 /* ViewController.swift in Sources */,
+				DD0AE680222C7B8A00310D01 /* Modal.swift in Sources */,
 				DD43B6AF222AB55100CF6682 /* Scanner2ViewController.swift in Sources */,
 				DD271031222AAB9E00F240F7 /* AppDelegate.swift in Sources */,
-				DD40926D222C12E500F4F8D5 /* popUpViewController.swift in Sources */,
+				DD40926D222C12E500F4F8D5 /* popUpAlert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

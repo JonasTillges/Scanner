@@ -73,9 +73,8 @@ class ViewController: UIViewController {
     
     @objc func buttonClicked() {
         
-        
-        let popUp = popUpViewController()
-        present(popUp, animated: true, completion: nil)
+        let alert = popUpAlert(title: "Install our new App.", closeButtonText: "No, Thanks", okText: "yes")
+        alert.show(animated: true)
         
 //        let scanner = ScannerViewController()
 //        scanner.navigationItem.title = "Scanner"
