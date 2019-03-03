@@ -14,6 +14,8 @@ import TinyConstraints
 class ViewController: UIViewController {
     
     var scannedImage: UIImage?
+    let scanButton = UIButton(type: .system)
+    let button = UIButton(type: .system)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,8 +30,6 @@ class ViewController: UIViewController {
     
     
     func setupViews() {
-        let scanButton = UIButton(type: .system)
-        let button = UIButton(type: .system)
         self.view.addSubview(scanButton)
         self.view.addSubview(button)
     
@@ -48,9 +48,27 @@ class ViewController: UIViewController {
         scanButton.layer.cornerRadius = 10
         scanButton.addTarget(self, action: #selector(scanbuttonClicked), for: .touchUpInside)
         scanButton.center(in: view, offset: CGPoint(x: 0, y: -50))
-        scanButton.height(50)
-        scanButton.width(100)
+        let height = scanButton.height(50)
+        let width = scanButton.width(100)
         
+        height.constant = 100
+        width.constant = 150
+        UIViewPropertyAnimator(duration: 1.5, dampingRatio: 0.2) {
+            self.scanButton.layoutIfNeeded()
+            }.startAnimation()
+        
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let height = scanButton.height(50)
+        let width = scanButton.width(100)
+        
+        height.constant = 100
+        width.constant = 150
+        UIViewPropertyAnimator(duration: 1.5, dampingRatio: 0.2) {
+            self.scanButton.layoutIfNeeded()
+            }.startAnimation()
     }
     
     @objc func buttonClicked() {

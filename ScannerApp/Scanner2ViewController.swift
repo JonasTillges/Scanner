@@ -44,6 +44,10 @@ class Scanner2ViewController: UIViewController, ImageScannerControllerDelegate {
         shareButton.isHidden = true
     }
     @objc func shareButtonTapped(){
+
+        UIViewPropertyAnimator(duration: 1, dampingRatio: 0.4) {
+            self.shareButton.layoutIfNeeded()
+            }.startAnimation()
         sharePdf(path: url)
     }
     
